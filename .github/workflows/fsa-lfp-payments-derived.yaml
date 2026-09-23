@@ -120,11 +120,19 @@ jobs:
       CLOUDFRONT_DISTRIBUTION_ID: E1BNL6ONVN84RI
       CLOUDFRONT_BASE: https://data.sustainable-fsa.com
     steps:
-      # duckdb and duckplyr read the Farm Payment Files over HTTPS; neither is
-      # in the base geospatial environment.
       - uses: mt-climate-office/actions/setup-geospatial@v1
-        with:
-          extra-r-packages: duckdb duckplyr
+
+      # duckdb and duckplyr read the Farm Payment Files over HTTPS; neither is
+      # in the base geospatial environment. They come from conda-forge rather
+      # than the action's `extra-r-packages`: the CRAN duckdb source tarball
+      # does not compile against the conda R toolchain (date_part.cpp,
+      # "expected unqualified-id"), and conda-forge ships an osx-arm64 build.
+      # The env directory is what the action caches, so this is a no-op on a
+      # cache hit.
+      - name: Add duckdb and duckplyr from conda-forge
+        run: |
+          mamba install -y -n r-geo -c conda-forge r-duckdb r-duckplyr
+          Rscript -e 'library(duckplyr); cat("duckdb", as.character(packageVersion("duckdb")), "duckplyr", as.character(packageVersion("duckplyr")), "\n")'
 
       - name: Configure AWS credentials (GitHub OIDC)
         uses: aws-actions/configure-aws-credentials@v6
