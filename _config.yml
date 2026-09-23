@@ -1,0 +1,12 @@
+title: FSA LFP Payments, Derived
+description:
+  Estimated LFP payments foregone under three administrative data issues in county eligibility
+  determinations — county boundaries, the NDMC coverage threshold, and the payment-months cap — derived
+  from the eligibility reanalysis and the Farm Payment Files, program years 2008–2025.
+author: R. Kyle Bocinsky
+url: "https://sustainable-fsa.com/fsa-lfp-payments-derived/" # Your GitHub Pages URL
+baseurl: "/fsa-lfp-payments-derived"
+
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme

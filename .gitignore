@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+README_cache
+README_files
+
+# S3-hosted listing artefacts (archive of record:
+# https://data.sustainable-fsa.com/fsa-lfp-payments-derived/).
+# Every published table is small enough to mirror in git; only the
+# directory-listing index lives on S3 alone.
+manifest.json
+manifest.html

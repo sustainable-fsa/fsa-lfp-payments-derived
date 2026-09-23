@@ -1,0 +1,92 @@
+{
+  "dataset": "fsa-lfp-payments-derived",
+  "schema": "fsa-lfp-payments-derived/1",
+  "program_years": [2008, 2025],
+  "inputs": [
+    {
+      "name": "fsa-lfp-eligibility-derived",
+      "url": "https://data.sustainable-fsa.com/fsa-lfp-eligibility-derived/fsa-lfp-eligibility-derived.parquet",
+      "status": 200,
+      "etag": "\"28d03640484c56e5b8c4445f48001ff8\"",
+      "last_modified": "Thu, 17 Sep 2026 13:35:16 GMT",
+      "rows": 375292
+    },
+    {
+      "name": "fsa-lfp-eligibility-derived/_manifest.txt",
+      "url": "https://data.sustainable-fsa.com/fsa-lfp-eligibility-derived/_manifest.txt",
+      "status": 200,
+      "etag": "\"09b289fc4bbd34ff3515996ca2b70ff1\"",
+      "last_modified": "Thu, 17 Sep 2026 13:35:26 GMT"
+    },
+    {
+      "name": "fsa-lfp-eligibility",
+      "url": "https://data.sustainable-fsa.com/fsa-lfp-eligibility/fsa-lfp-eligibility.parquet",
+      "status": 200,
+      "etag": "\"f1e36c77631dfa876b2dc90ea79f575d\"",
+      "last_modified": "Wed, 19 Aug 2026 23:17:40 GMT",
+      "rows": 51126
+    },
+    {
+      "name": "fsa-normal-grazing-period",
+      "url": "https://data.sustainable-fsa.com/fsa-normal-grazing-period/fsa-normal-grazing-period.parquet",
+      "status": 200,
+      "etag": "\"1b5f55ce7ef6fd623b716dc49cf0cc7d\"",
+      "last_modified": "Wed, 19 Aug 2026 17:00:14 GMT",
+      "rows": 229088
+    },
+    {
+      "name": "fsa-counties-dd22",
+      "url": "https://data.sustainable-fsa.com/fsa-counties-dd22/fsa-counties-dd22.parquet",
+      "status": 200,
+      "etag": "\"da69ae5fdba00bb4865e327a5eecd6e9-7\"",
+      "last_modified": "Fri, 21 Aug 2026 22:44:50 GMT",
+      "rows": 3245
+    },
+    {
+      "name": "fsa-payment-files/_manifest.txt",
+      "url": "https://data.sustainable-fsa.com/fsa-payment-files/_manifest.txt",
+      "status": 200,
+      "etag": "\"eb14fd1b1cbd205b31615f4f45b37c48\"",
+      "last_modified": "Fri, 11 Sep 2026 18:08:53 GMT",
+      "rows": 984
+    }
+  ],
+  "rows": {
+    "records": 235875,
+    "county_years": 10218,
+    "annual": 90
+  },
+  "disbursed": 13784111738.5,
+  "additional": [
+    {
+      "scenario": "Boundary (Type 1)",
+      "county_years": 34,
+      "low": 37668798.96,
+      "high": 37668798.96
+    },
+    {
+      "scenario": "Threshold (Type 2)",
+      "county_years": 104,
+      "low": 89982500.88,
+      "high": 94037926.2
+    },
+    {
+      "scenario": "Payment Months (Type 3)",
+      "county_years": 4997,
+      "low": 4863181117.29,
+      "high": 6717689369.23
+    },
+    {
+      "scenario": "All Issues (Sum of Types)",
+      "county_years": 5099,
+      "low": 4990832417.13,
+      "high": 6849396094.39
+    },
+    {
+      "scenario": "All Issues (Census)",
+      "county_years": 5083,
+      "low": 4913098478.25,
+      "high": 6801511539.22
+    }
+  ]
+}
