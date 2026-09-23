@@ -8,7 +8,7 @@
       "url": "https://data.sustainable-fsa.com/fsa-lfp-eligibility-derived/fsa-lfp-eligibility-derived.parquet",
       "status": 200,
       "etag": "\"28d03640484c56e5b8c4445f48001ff8\"",
-      "last_modified": "Thu, 17 Sep 2026 13:35:16 GMT",
+      "last_modified": "Wed, 23 Sep 2026 19:38:08 GMT",
       "rows": 375292
     },
     {
@@ -16,7 +16,7 @@
       "url": "https://data.sustainable-fsa.com/fsa-lfp-eligibility-derived/_manifest.txt",
       "status": 200,
       "etag": "\"09b289fc4bbd34ff3515996ca2b70ff1\"",
-      "last_modified": "Thu, 17 Sep 2026 13:35:26 GMT"
+      "last_modified": "Wed, 23 Sep 2026 19:38:19 GMT"
     },
     {
       "name": "fsa-lfp-eligibility",
@@ -46,7 +46,7 @@
       "name": "fsa-payment-files/_manifest.txt",
       "url": "https://data.sustainable-fsa.com/fsa-payment-files/_manifest.txt",
       "status": 200,
-      "etag": "\"eb14fd1b1cbd205b31615f4f45b37c48\"",
+      "etag": "W/\"eb14fd1b1cbd205b31615f4f45b37c48\"",
       "last_modified": "Fri, 11 Sep 2026 18:08:53 GMT",
       "rows": 984
     }
